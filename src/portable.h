@@ -48,7 +48,7 @@ bool IsNeedPortable()
 
 std::wstring GetUserDataDir()
 {
-    std::wstring path = GetAppDir() + L"\\..\\Data";
+    std::wstring path = GetAppDir() + L"\\..\\User Data";
 
     TCHAR temp[MAX_PATH];
     ::PathCanonicalize(temp, path.data());
